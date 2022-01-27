@@ -1,0 +1,32 @@
+C:\Users\USER PC\Desktop\StockMSFile\bin\Debug\net5.0\StockMSFile.exe
+C:\Users\USER PC\Desktop\StockMSFile\bin\Debug\net5.0\StockMSFile.deps.json
+C:\Users\USER PC\Desktop\StockMSFile\bin\Debug\net5.0\StockMSFile.runtimeconfig.json
+C:\Users\USER PC\Desktop\StockMSFile\bin\Debug\net5.0\StockMSFile.runtimeconfig.dev.json
+C:\Users\USER PC\Desktop\StockMSFile\bin\Debug\net5.0\StockMSFile.dll
+C:\Users\USER PC\Desktop\StockMSFile\bin\Debug\net5.0\ref\StockMSFile.dll
+C:\Users\USER PC\Desktop\StockMSFile\bin\Debug\net5.0\StockMSFile.pdb
+C:\Users\USER PC\Desktop\StockMSFile\obj\Debug\net5.0\StockMSFile.csproj.AssemblyReference.cache
+C:\Users\USER PC\Desktop\StockMSFile\obj\Debug\net5.0\StockMSFile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER PC\Desktop\StockMSFile\obj\Debug\net5.0\StockMSFile.AssemblyInfoInputs.cache
+C:\Users\USER PC\Desktop\StockMSFile\obj\Debug\net5.0\StockMSFile.AssemblyInfo.cs
+C:\Users\USER PC\Desktop\StockMSFile\obj\Debug\net5.0\StockMSFile.csproj.CoreCompileInputs.cache
+C:\Users\USER PC\Desktop\StockMSFile\obj\Debug\net5.0\StockMSFile.dll
+C:\Users\USER PC\Desktop\StockMSFile\obj\Debug\net5.0\ref\StockMSFile.dll
+C:\Users\USER PC\Desktop\StockMSFile\obj\Debug\net5.0\StockMSFile.pdb
+C:\Users\USER PC\Desktop\StockMSFile\obj\Debug\net5.0\StockMSFile.genruntimeconfig.cache
+C:\Users\Utman\Desktop\StockMSFile\bin\Debug\net5.0\StockMSFile.exe
+C:\Users\Utman\Desktop\StockMSFile\bin\Debug\net5.0\StockMSFile.deps.json
+C:\Users\Utman\Desktop\StockMSFile\bin\Debug\net5.0\StockMSFile.runtimeconfig.json
+C:\Users\Utman\Desktop\StockMSFile\bin\Debug\net5.0\StockMSFile.runtimeconfig.dev.json
+C:\Users\Utman\Desktop\StockMSFile\bin\Debug\net5.0\StockMSFile.dll
+C:\Users\Utman\Desktop\StockMSFile\bin\Debug\net5.0\ref\StockMSFile.dll
+C:\Users\Utman\Desktop\StockMSFile\bin\Debug\net5.0\StockMSFile.pdb
+C:\Users\Utman\Desktop\StockMSFile\obj\Debug\net5.0\StockMSFile.csprojAssemblyReference.cache
+C:\Users\Utman\Desktop\StockMSFile\obj\Debug\net5.0\StockMSFile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Utman\Desktop\StockMSFile\obj\Debug\net5.0\StockMSFile.AssemblyInfoInputs.cache
+C:\Users\Utman\Desktop\StockMSFile\obj\Debug\net5.0\StockMSFile.AssemblyInfo.cs
+C:\Users\Utman\Desktop\StockMSFile\obj\Debug\net5.0\StockMSFile.csproj.CoreCompileInputs.cache
+C:\Users\Utman\Desktop\StockMSFile\obj\Debug\net5.0\StockMSFile.dll
+C:\Users\Utman\Desktop\StockMSFile\obj\Debug\net5.0\ref\StockMSFile.dll
+C:\Users\Utman\Desktop\StockMSFile\obj\Debug\net5.0\StockMSFile.pdb
+C:\Users\Utman\Desktop\StockMSFile\obj\Debug\net5.0\StockMSFile.genruntimeconfig.cache
