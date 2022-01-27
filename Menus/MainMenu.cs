@@ -23,10 +23,9 @@ namespace StockMSFile.Menus
             {
                 Console.Clear();
                 PrintMenu();
-                int value;
-                if (int.TryParse(Console.ReadLine(), out value))
+                int op;
+                if (int.TryParse(Console.ReadLine(), out op))
                 {
-                    int op = value;
                     switch (op)
                     {
                         case 1:

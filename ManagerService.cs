@@ -183,7 +183,7 @@ namespace StockMSFile
 
         private void MakeNewSale(Manager manager, bool newCustomer = true)
         {
-            Customer customer = null;
+            Customer customer;
             if (newCustomer)
             {
                 customer = customerRepository.AddNewCustomer();
