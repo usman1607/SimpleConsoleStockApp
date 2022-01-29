@@ -1,1 +1,4 @@
-Gari	250	300	5	food	c86864d8f3
+Milo 50g	80	100	1490	Beverages	C1381FEBA6
+Milo-refill	1100	1250	499	Beverages	4D8D9DDD2C
+Peak Milk	1300	1400	998	Beverages	9DB0EB7761
+Orange Juice	730	800	144	Fruit Juice	BE199EC853

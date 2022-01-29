@@ -1,3 +1,2 @@
-Ola	Mummy	90890	Abk	ola@gmail.com	CUS-20C2C43	6000
-Hamad	King	7876689	Lagos	king@gmail.com	CUS-4936CE3	6000
-Jamelee	papa	43534534	akure	papa@gmail.com	CUS-4D438D1	1500
+Adewale	Mori	09087654321	Abk	ade@gmail.com	CUS-2288174	8050
+Ibrahim	Ola	09088776563	Abk	ola@gmail.com	CUS-E11C999	1800

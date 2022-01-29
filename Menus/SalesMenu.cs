@@ -88,7 +88,8 @@ namespace StockMSFile.Menus
                             break;
 
                         default:
-                            Console.WriteLine("Invalid inpute");
+                            Console.WriteLine("Invalid inpute...\nPress any key to try again...");
+                            Console.ReadKey();
                             break;
                     }
                 }

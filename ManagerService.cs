@@ -268,6 +268,7 @@ namespace StockMSFile
                                 LogBook.UpdateLogBook(product, quantity);
                                 Console.WriteLine("Sales successful:");
                                 PrintReceipt(sale);
+                                Console.WriteLine();
                                 Console.Write("Do you want to buy more goods? y for Yes and n for No: ");
                                 var ans = Console.ReadLine().ToUpper();
                                 if (!ans.Equals("Y"))

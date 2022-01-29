@@ -1,4 +1,5 @@
 ﻿using StockMSFile.Menus;
+using StockMSFile.Models;
 using StockMSFile.Repositories;
 using System;
 

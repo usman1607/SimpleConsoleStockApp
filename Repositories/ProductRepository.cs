@@ -78,31 +78,43 @@ namespace StockMSFile.Repositories
 
         public void AddNewProduct()
         {
-            Console.Write("Enter product name: ");
-            var name = Console.ReadLine();
-            Console.Write("Enter product quantity: ");
-            var quantity = int.Parse(Console.ReadLine());
+            bool addMore = true;
+            do
+            {
+                Console.Write("Enter product name: ");
+                var name = Console.ReadLine();
+                Console.Write("Enter product quantity: ");
+                var quantity = int.Parse(Console.ReadLine());
 
-            var product = ExistByName(name);
-            if (product != null)
-            {
-                UpdateProductQuantity(product, quantity, true);
-                Console.WriteLine("Product is an existing product and the quantity updated successfully.");
-            }
-            else
-            {
-                Console.Write("Enter product cost price: ");
-                var costPrice = decimal.Parse(Console.ReadLine());
-                Console.Write("Enter product selling price: ");
-                var sellingPrice = decimal.Parse(Console.ReadLine());
-                Console.Write("Enter product category: ");
-                var category = Console.ReadLine();
-                product = new Product(name, costPrice, sellingPrice, quantity, category);
-                products.Add(product);
-                AddProductToFile(product);
-                Console.WriteLine("New Product created successfully.");
-            }
-            LogBook.UpdateLogBook(product, quantity, true);
+                var product = ExistByName(name);
+                if (product != null)
+                {
+                    UpdateProductQuantity(product, quantity, true);
+                    Console.WriteLine("Product is an existing product and the quantity updated successfully.");
+                }
+                else
+                {
+                    Console.Write("Enter product cost price: ");
+                    var costPrice = decimal.Parse(Console.ReadLine());
+                    Console.Write("Enter product selling price: ");
+                    var sellingPrice = decimal.Parse(Console.ReadLine());
+                    Console.Write("Enter product category: ");
+                    var category = Console.ReadLine();
+                    product = new Product(name, costPrice, sellingPrice, quantity, category);
+                    products.Add(product);
+                    AddProductToFile(product);
+                    Console.WriteLine("New Product created successfully.");
+                }
+                LogBook.UpdateLogBook(product, quantity, true);
+                Console.WriteLine();
+                Console.Write("Do you want to add more goods? y for Yes and n for No: ");
+                var ans = Console.ReadLine().ToUpper();
+                if (!ans.Equals("Y"))
+                {
+                    Console.WriteLine("Thanks and well done...");
+                    addMore = false;
+                }
+            } while (addMore);
         }
 
         private Product ExistByName(string name)
@@ -126,7 +138,7 @@ namespace StockMSFile.Repositories
         {
             if (products.Count == 0)
             {
-                Console.WriteLine("No Manager added yet.");
+                Console.WriteLine("No product added yet.");
             }
 
             int i = 1;

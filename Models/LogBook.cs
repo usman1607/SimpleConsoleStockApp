@@ -48,7 +48,7 @@ namespace StockMSFile.Models
 
                 TotalSales += soldPrice;
                 TotalCostOfSales += soldCost;
-                TotalProfit = TotalCostOfSales - TotalSales;
+                TotalProfit = TotalSales - TotalCostOfSales;
 
                 TotalGoodsSold += quantity;
                 TotalGoodsLeft = TotalGoodsPuchased - TotalGoodsSold;
