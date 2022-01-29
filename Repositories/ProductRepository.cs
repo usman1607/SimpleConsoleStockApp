@@ -102,6 +102,7 @@ namespace StockMSFile.Repositories
                 AddProductToFile(product);
                 Console.WriteLine("New Product created successfully.");
             }
+            LogBook.UpdateLogBook(product, quantity, true);
         }
 
         private Product ExistByName(string name)

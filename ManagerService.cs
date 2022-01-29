@@ -20,6 +20,7 @@ namespace StockMSFile
         public ManagerService()
         {
             ReadSalesFromFile();
+            LogBook.ReadLogFromFile();
             managerRepository = new ManagerRepository();
             productRepository = new ProductRepository();
             customerRepository = new CustomerRepository();
@@ -129,6 +130,45 @@ namespace StockMSFile
             }
         }
 
+        public void ViewLogBook(Manager admin)
+        {
+            if (IsAdmin(admin))
+            {
+                Console.WriteLine($"TotalPuchaseCost:\t{LogBook.TotalPuchaseCost}");
+                Console.WriteLine($"TotalGoodsPuchased:\t{LogBook.TotalGoodsPuchased}");
+                Console.WriteLine();
+                Console.WriteLine($"TotalGoodsSold:\t{LogBook.TotalGoodsSold}");
+                Console.WriteLine($"TotalGoodsLeft:\t{LogBook.TotalGoodsLeft}");
+                Console.WriteLine();
+                Console.WriteLine($"TotalSales:\t{LogBook.TotalSales}");
+                Console.WriteLine($"TotalCostOfSales:\t{LogBook.TotalCostOfSales}");
+                Console.WriteLine($"TotalProfit:\t{LogBook.TotalProfit}");
+                
+                GetAllSales();
+            }
+            else
+            {
+                Console.WriteLine("Sorry, its only admin that can view log book.");
+            }
+        }
+
+        private void GetAllSales()
+        {
+            if(sales.Count == 0)
+            {
+                Console.WriteLine("No sales yet.");
+            }
+            else
+            {
+                int i = 1;
+                foreach (var sale in sales)
+                {
+                    Console.WriteLine($"{i}.\t{sale.DateSold}\t{sale.CustomerName}\t{sale.Name}\t{sale.Quantity}\t{sale.TotalPrice}\t{sale.SoldBy}\t{sale.Reference}");
+                    i++;
+                }
+            }
+        }
+
         public void AddManager(Manager admin)
         {
             if(IsAdmin(admin))
@@ -225,8 +265,8 @@ namespace StockMSFile
                                 var sale = new Sale(product.Name, product.SKU, quantity, product.SellingPrice, product.SellingPrice * quantity, customer.FirstName + " " + customer.LastName, manager.FirstName + " " + manager.LastName);
                                 sales.Add(sale);
                                 AddToFile(sale);
+                                LogBook.UpdateLogBook(product, quantity);
                                 Console.WriteLine("Sales successful:");
-                                //Console.WriteLine(sale.ToString());
                                 PrintReceipt(sale);
                                 Console.Write("Do you want to buy more goods? y for Yes and n for No: ");
                                 var ans = Console.ReadLine().ToUpper();

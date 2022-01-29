@@ -79,7 +79,7 @@ namespace StockMSFile.Menus
                             Console.ReadKey();
                             break;
                         case 10:
-                            //managerService.ViewLogBook(manager);
+                            managerService.ViewLogBook(manager);
                             Console.WriteLine("Press any key to continue....");
                             Console.ReadKey();
                             break;
